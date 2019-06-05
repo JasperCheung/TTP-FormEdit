@@ -38,6 +38,7 @@ class FormEdit extends Component{
   }
 
   handleSubmit = (event) => {
+    //prevent default prevents the refresh
     event.preventDefault();
     console.log(event.target);
     this.setState({baseFirst: this.state.first, baseLast:this.state.last, edit: false});
